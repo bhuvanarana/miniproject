@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;600;700&display=swap');
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+body{
+    background-image: url("https://images.squarespace-cdn.com/content/v1/502c5b17e4b0023d7ed017ec/1391892241581-ZX5S1W3Z2Q05QVLONRZB/TrilogyEventDesign_JPGPhotography_FeatureImage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 800px;
+}
+/*h2{
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 50px;
+    margin: 40px;
+    background-color: burlywood;
+    background: linear-gradient(to right, #ff6600 , #01330def, #01300ba4, #03e9ca);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+     text-shadow: 0 0 2px rgba(125, 235, 156, 0.6);
+}
+h4{
+    text-align: center;
+    padding: 0px;
+    font-weight: bold;
+    font-size: 15px;
+    color: blue;
+    margin: 40px;
+}*/
+   
+
+    body{
+        font-family: montserrat;
+    }
+    nav{
+        background-color: rgb(246 223 235/0.6);
+        height: 80px;
+        max-width: 100%;
+    }
+    label.logo{
+        color: rgb(0, 0, 0);
+        font-size: 35px;
+        line-height: 80px;
+        padding: 0 80px;
+        font-weight: bold;
+    }
+    nav ul{
+         float: right;
+         margin-right: 20px;
+    
+    }
+    nav ul li{
+        display: inline-block;
+        line-height: 80px;
+        margin: 0 2px;
+    
+    }
+    nav ul li a{
+        color: rgb(0, 0, 0);
+        font-size: 15px;
+        padding: 7px 2px;
+        border-radius: 2px;
+        text-transform: uppercase;
+    
+    }
+    a.active,a:hover{
+        background: rgb(246 223 235/0.6);
+        transition: .5s;
+    }
+    .checkbtn{
+        font-size: 30px;
+        color: rgb(0, 0, 0);
+        float: right;
+        line-height: 80px;
+        margin-right: 40px;
+        cursor: pointer;
+        display: none;
+    }
+    #check{
+        display: none;
+    }
+    
+    @media (max-width: 952px){
+        label.logo{
+            font-size: 30px;
+            padding-left: 50px;
+    
+        }
+        nav ul li a{
+            font-size: 16px;
+        }
+    }
+    @media (max-width: 858px){
+        .checkbtn{
+            display: block;
+        }
+        ul{
+            position: fixed;
+            width: 100%;
+            height: 100vh;
+            background: rgb(246 223 235/0.6);
+            top: 80px;
+            left: -100%;
+            text-align: center;
+            transition: all .5s;
+        }
+        nav ul li{
+            display: block;
+            margin: 50px 0;
+            line-height: 8px;
+        }
+        nav ul li a{
+            font-size: 15px;
+        }
+        a:hover,a.active{
+            background: none;
+            color: rgb(0, 0, 0);
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+    
+    }
+
+    /*.section1 main {
+        text-align: center;
+        padding: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .section1 main h2,h4{
+        font-size: 30px;
+        margin-left: 210px;
+        letter-spacing: 0;
+        max-width: 200px;
+        line-height: 1.5;
+        color: rgb(0, 0, 0);
+        font-family: "didot-w01-italic,serif";
+        max-width: 60%;
+        background-color: rgb(246 223 235/0.6);
+        padding: 20px;
+    } */
+    h2{
+        text-align: center;
+        padding: 20px;
+        font-weight: bold;
+        font-size: 33px;
+        font-family: "didot-w01-italic,serif";
+        color: rgb(0, 0, 0);
+        margin: 40px;
+    }
+    h4{
+        text-align: center;
+        padding: 0px;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: "didot-w01-italic,serif";
+        color: rgb(0, 0, 0);
+        margin: 20px;
+    }
+    .box1{
+        max-width:400px;
+        height:200px;
+        margin:200px auto;
+        background-color: rgb(246 223 235/0.6);
+               
+    }
+
+    /*footer*/
+    
+    html{
+        font-size: 62.5%;
+        font-weight: bold;
+        overflow-x: hidden;
+        scroll-padding-top: 7rem;
+        scroll-behavior: smooth;
+    }
+    
+    html::-webkit-scrollbar{
+        width:1rem;
+    }
+    
+    html::-webkit-scrollbar-track{
+        background: #444;
+    }
+    
+    html::-webkit-scrollbar-thumb{
+        background: rgb(246 223 235/0.6)    ;
+        border-radius: 5rem;
+    }
+    .footer{
+        
+        background: rgb(246 223 235/0.6) ;
+    }
+    
+   .footer .box-container{
+        display: grid;
+        margin-left: 200px;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap:1.5rem;
+    }
+    
+    .footer .box-container .box h3{
+        font-size: 2.5rem;
+        padding:1rem 0;
+        color:rgb(0, 0, 0);
+    }
+    
+    .footer .box-container .box a{
+        display: block;
+        font-size: 1.7rem;
+        padding:1rem 0;
+        color:rgb(0, 0, 0);
+    }
+    
+    .footer .box-container .box a i{
+        padding-right: .5rem;
+        color:rgb(0, 0, 0);
+    }
+    
+    .footer .box-container .box a:hover i{
+        padding-right: 1.5rem;
+        color:rgb(247, 185, 185);
+    }
+    
+    .footer .credit{
+        text-align: center;
+        border-top: .1rem solid #222;
+        color:rgb(0, 0, 0);
+        padding:2rem;
+        padding-top: 2.5rem;
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+    
+    .footer .credit span{
+        color: blue;
+    }
